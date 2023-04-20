@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/white-logo.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Text to Binary</title>
+</head>
+<body>
+    <div class="video-bg">
+        <video autoplay loop muted class="white-bg">
+          <source src="./videos/white-bg.mp4" type="video/mp4">
+        </video>
+
+        <video autoplay loop muted class="black-bg">
+            <source src="./videos/black-bg.mp4" type="video/mp4">
+        </video>
+
+        <!--START Main Section-->
+        <div class="container main-frame">
+            <div class="row">
+                <!--START Header Of Main Section-->
+                <div class="col-12 header d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <img class="logo me-3" src="./img/black-logo.png" alt="logo">
+                        <h2 class="logo-text">Text to Binary</h2>
+                    </div>
+                    <div class="dark-mode">
+                        <div class="d-flex align-items-center justify-content-center dark-mode-icons position-relative">
+                            <svg class="moon-svg position-absolute" stroke="black" fill="black" stroke-width="0" viewBox="0 0 24 24" height="2.3em" width="2.3em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M9.822 2.238a9 9 0 0 0 11.94 11.94C20.768 18.654 16.775 22 12 22 6.477 22 2 17.523 2 12c0-4.775 3.346-8.768 7.822-9.762zm8.342.053L19 2.5v1l-.836.209a2 2 0 0 0-1.455 1.455L16.5 6h-1l-.209-.836a2 2 0 0 0-1.455-1.455L13 3.5v-1l.836-.209A2 2 0 0 0 15.29.836L15.5 0h1l.209.836a2 2 0 0 0 1.455 1.455zm5 5L24 7.5v1l-.836.209a2 2 0 0 0-1.455 1.455L21.5 11h-1l-.209-.836a2 2 0 0 0-1.455-1.455L18 8.5v-1l.836-.209a2 2 0 0 0 1.455-1.455L20.5 5h1l.209.836a2 2 0 0 0 1.455 1.455z"></path></g></svg>
+                            <svg class="sun-svg position-absolute" stroke="black" fill="black" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2.3em" width="2.3em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        </div>
+                    </div>
+                </div>
+                <!--END Header Of Main Section-->
+
+                <!--START Switch and Titles Div-->
+                <div class="d-flex align-items-center justify-content-center col-12 switch-div text-center">
+                    <h2 class="text">Text</h2>
+                    <button class="switch d-flex align-items-center justify-content-center buttons">
+                        <svg class="reverse" stroke="black" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1.6em" width="1.6em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                    </button>
+                    <h2 class="binary">Binary</h2>
+                </div>
+                <!--END Switch and Titles Div-->
+
+                <!--START Textarea Div-->
+                <div class="col-12 textarea-div">
+                    <div class="d-flex position-relative m-auto">
+                        <div class="textarea-div-1 position-absolute d-flex align-items-center flex-column">
+                            <textarea id="textarea-text"></textarea>
+                        </div>
+                        <div class="textarea-div-2 d-flex position-absolute align-items-center flex-column">
+                            <textarea id="textarea-binary"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!--END Textarea Div-->
+
+                <!--START Buttons Div-->
+                <div class="d-flex align-items-center justify-content-center col-12 buttons-div">
+                    <button class="d-flex justify-content-center align-items-center buttons copy">Copy</button>
+                    <button class="d-flex justify-content-center align-items-center buttons clear">Clear</button>
+                    <button class="d-flex justify-content-center align-items-center buttons convert">Convert</button>
+                </div>
+                <!--END Buttons Div-->
+            </div>
+        </div>
+        <!--END Main Section-->
+        </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

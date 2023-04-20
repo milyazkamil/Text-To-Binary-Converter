@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*START Background Styles*/
+.black-bg {
+    display: none;
+}
+.white-bg, .black-bg {
+    transition: all 3s ease-in-out;
+}
+
+.video-bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+/*END Background Styles*/
+
+/*START Main Section*/
+.main-frame {
+    border-radius: 20px;
+    height: 60vh;
+    padding: 2vh;
+    width: 50%;
+    transition: all 1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: rgb(214,214,214,0.5);
+    box-shadow: 0 0 100px 0 rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border: 1px solid rgb(52,53,65,0.5);
+}
+/*END Main Section*/
+
+/*START Header Of Main Section*/
+.header {
+    margin-bottom: 5vh;
+    height: 5vh;
+    max-height: 50px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text {
+    width: 210px;
+}
+
+.dark-mode {
+    width: 140px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: black;
+    transition: all 1s;
+    height: 50px;
+}
+
+.dark-mode-icons {
+    display: flex;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.moon-svg {
+    border-radius: 100%;
+    padding: 5px;
+    transition: all 1s;
+    background-color: white;
+    left: 35%;
+}
+
+.sun-svg {
+    border-radius: 100%;
+    padding: 5px;
+    transition: all 1s;
+    left: 35%;
+}
+/*END Header Of Main Section*/
+
+/*START Switch and Titles Div*/
+.switch-div {
+    max-height: 5vh;
+    margin-bottom: 1vh;
+}
+
+.text {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+}
+
+.binary {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.switch {
+    width: 200px !important;
+}
+
+.reverse {
+    transition: all 2s;
+    transform: rotate(0deg);
+}
+/*END Switch and Titles Div*/
+
+/*START Textarea Div*/
+textarea {
+    width: 96%;
+    height: 100%;
+    resize: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.textarea-div {
+    height: 30vh;
+    margin-bottom: 5vh;
+}
+
+.textarea-div-1 {
+    height: 30vh;
+    transition: all 2s;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+.textarea-div-2 {
+    height: 30vh;
+    transition: all 2s;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+/*END Textarea Div*/
+
+/*START Buttons Div*/
+.buttons-div {
+    height: 5vh;
+}
+
+.buttons {
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: all 1s;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.buttons:hover {
+    border: 1px solid transparent;
+}
+/*END Buttons Div*/
+
+
+
+
