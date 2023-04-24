@@ -63,6 +63,7 @@
 }
 
 .logo-text {
+    font-size: 32px;
     width: 210px;
 }
 
@@ -173,6 +174,7 @@ textarea {
     border-radius: 100px;
     background-color: transparent;
     border: 1px solid black;
+    transition: all 0.3s;
 }
 
 .buttons:hover {
@@ -181,5 +183,78 @@ textarea {
 /*END Buttons Div*/
 
 
+/*START Responsive Section*/
+@media all and (max-width: 992px) {
+    .main-frame {
+        height: 60vh;
+        width: 80%;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 26px;
+        width: 170px;
+    }
+
+    .dark-mode {
+        width: 100px;
+        height: 35px;
+    }
+    
+    .moon-svg {
+        width: 1.6em;
+        height: 1.6em;
+    }
+    
+    .sun-svg {
+        width: 1.6em;
+        height: 1.6em;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .main-frame {
+        height: 75vh;
+        width: 95%;
+    }
+
+    .textarea-div {
+        height: 45vh;
+        margin-bottom: 5vh;
+    }
+    
+    .textarea-div-1 {
+        height: 45vh;
+    }
+    
+    .textarea-div-2 {
+        height: 45vh;
+    }
 
 
+    .logo-text {
+        font-size: 22px;
+        width: 170px;
+    }
+
+    .dark-mode {
+        width: 100px;
+        border-radius: 100px;
+        height: 30px;
+    }
+    
+    .moon-svg {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    
+    .sun-svg {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+/*END Responsive Section*/
