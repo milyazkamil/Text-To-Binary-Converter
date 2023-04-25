@@ -68,12 +68,12 @@
 }
 
 .dark-mode {
-    width: 140px;
+    width: 120px;
     border-radius: 100px;
     cursor: pointer;
     background-color: black;
     transition: all 1s;
-    height: 50px;
+    height: 40px;
 }
 
 .dark-mode-icons {
@@ -84,6 +84,8 @@
 }
 
 .moon-svg {
+    width: 2em;
+    height: 2em;
     border-radius: 100%;
     padding: 5px;
     transition: all 1s;
@@ -92,6 +94,8 @@
 }
 
 .sun-svg {
+    width: 2em;
+    height: 2em;
     border-radius: 100%;
     padding: 5px;
     transition: all 1s;
