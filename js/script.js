@@ -21,6 +21,9 @@ const textareaDiv2 = document.querySelector(".textarea-div-2");
 const darkModeIcons = document.querySelector(".dark-mode-icons");
 const textareaBinary = document.getElementById("textarea-binary");
 
+textareaText.style.backgroundColor = "white";
+textareaBinary.style.backgroundColor = "transparent";
+
 sunSvg.style.display = "none";
 
 let isDarkMode = true;
@@ -37,6 +40,14 @@ darkMode.addEventListener("click", () => {
 
     text.style.color = "white";
     binary.style.color = "white";
+
+    if (isDarkMode === false && textareaBinary.style.backgroundColor === "transparent") {
+      textareaText.style.color = "black";
+      textareaBinary.style.color = "white";
+    } else if (isDarkMode === false && textareaText.style.backgroundColor === "transparent") {
+      textareaText.style.color = "white";
+      textareaBinary.style.color = "black";
+    }
 
     logo.src = "./img/white-logo.png";
     logoText.style.color = "white";
@@ -78,6 +89,14 @@ darkMode.addEventListener("click", () => {
 
     text.style.color = "black";
     binary.style.color = "black";
+    
+    if (isDarkMode === true && textareaBinary.style.backgroundColor === "transparent") {
+      textareaText.style.color = "black";
+      textareaBinary.style.color = "black";
+    } else if (isDarkMode === true && textareaText.style.backgroundColor === "transparent") {
+      textareaText.style.color = "black";
+      textareaBinary.style.color = "black";
+    }
 
     logoText.style.color = "black";
     logo.src = "./img/black-logo.png";
@@ -119,8 +138,18 @@ switchBtn.addEventListener("click", () => {
     text.style.opacity = 0;
     binary.style.opacity = 0;
 
-    textareaText.style.color = "black";
-    textareaBinary.style.color = "black";
+    textareaText.value = "";
+    textareaBinary.value = "";
+
+    if (textareaBinary.style.backgroundColor === "transparent") {
+      textareaBinary.style.backgroundColor = "white";
+      textareaText.style.backgroundColor = "transparent";
+    }
+
+    if (isDarkMode === false && textareaText.style.backgroundColor === "transparent") {
+      textareaText.style.color = "white";
+      textareaBinary.style.color = "black";
+    }
 
     textareaDiv1.style.left = "50%";
     textareaDiv2.style.right = "50%";
@@ -139,8 +168,18 @@ switchBtn.addEventListener("click", () => {
     text.style.opacity = 0;
     binary.style.opacity = 0;
 
-    textareaText.style.color = "black";
-    textareaBinary.style.color = "black";
+    textareaText.value = "";
+    textareaBinary.value = "";
+
+    if (textareaBinary.style.backgroundColor === "white") {
+      textareaText.style.backgroundColor = "white";
+      textareaBinary.style.backgroundColor = "transparent";
+    }
+
+    if (isDarkMode === false && textareaBinary.style.backgroundColor === "transparent") {
+      textareaText.style.color = "black";
+      textareaBinary.style.color = "white";
+    }
 
     textareaDiv1.style.left = "0";
     textareaDiv2.style.right = "0";
